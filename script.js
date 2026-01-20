@@ -250,13 +250,13 @@ const questions = [
         category: "ALGORISMES PROBABILISTICS",
         q: "40.- Si volem incrementar la probabilitat d’encert d’un algorisme p-correcte executant-lo diverses vegades, per quin tipus d’algorisme pujarà més ràpidament la probabilitat d’encert en incrementar el número d’execucions?",
         options: ["a) Algorismes numèrics.", "b) Algorismes de Monte Carlo.", "c) Algorismes de Las Vegas.", "d) Algorismes de Sherwood.", "e) Cap de les anteriors."],
-        correct: 2
+        correct: 1
     },
     {
         category: "ALGORISMES PROBABILISTICS",
         q: "41.- Si tenim un algorisme de Monte Carlo 0.8-correcte, quin és el número mínim de vegades que hauré d’executar-lo per obtenir un algorisme 0.9-correcte?",
         options: ["a) 3", "b) 5", "c) 7", "d) 9", "e) Cap de les anteriors."],
-        correct: 0
+        correct: 1
     },
     {
         category: "ALGORISMES PROBABILISTICS",
