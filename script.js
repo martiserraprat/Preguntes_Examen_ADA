@@ -1,4 +1,5 @@
 const questions = [
+    // --- Preguntas iniciales (1-25) ---
     {
         category: "Visión por Computador",
         q: "1.- Cuál de estas frecuencias para una onda electromagnética pertenece al espectro visible (puedes suponer que c = 300000 km/s):",
@@ -147,6 +148,158 @@ const questions = [
         category: "Visión por Computador",
         q: "25.- Cuál de estas homografías lleva a una vista cenital el suelo de una determinada imagen con un punto de fuga con horizonte plano (vista desde un coche de una carretera):",
         options: ["a) [ 1, 0, 0; 0, 1, 0; 0, 0, 1]", "b) [ 1,-1, 0; 0, 1, 0; 0,-0.01, 1]", "c) [ 1, 0, 0;-1, 0, 1; 0, 0, 1]", "d) [ 1,-1, 0; 0, 1, 0; 0, 0, 1]"],
+        correct: 1
+    },
+
+    // --- Nuevas Preguntas Añadidas (26-50) ---
+    {
+        category: "Visión por Computador",
+        q: "26.- En el espectro electromagnético se cumple que:",
+        options: ["a) a mayor energía, mayor longitud de onda.", "b) a menor energía, menor longitud de onda.", "c) a mayor frecuencia, mayor longitud de onda.", "d) a menor frecuencia, menor energía."],
+        correct: 3
+    },
+    {
+        category: "Visión por Computador",
+        q: "27.- Cuál de estos emisores nos da un color más saturado:",
+        options: ["a) láser rojo monocromático", "b) led rojo con un ancho de banda de 40 nm", "c) fuente blanca cálida incandescente (luz anaranjada)", "d) fuente blanca fría de fluorescente (luz azulada)"],
+        correct: 0
+    },
+    {
+        category: "Visión por Computador",
+        q: "28.- Qué partes del ojo no estarían asociadas a las funciones que en una cámara encontramos en el sensor, el diafragma y parte del sistema óptico:",
+        options: ["a) retina", "b) iris", "c) humor vítreo", "d) punto ciego"],
+        correct: 3
+    },
+    {
+        category: "Visión por Computador",
+        q: "29.- Qué tipo de sensor se caracterizan en mayor medida por (1) sensibilidad no lineal, (2) global shutter:",
+        options: ["a) (1) CCD, (2) CCD", "b) (1) CCD, (2) CMOS", "c) (1) CMOS, (2) CMOS", "d) (1) CMOS, (2) CCD"],
+        correct: 3
+    },
+    {
+        category: "Visión por Computador",
+        q: "30.- Cuál de estas afirmaciones es verdadera sobre la corriente oscura en un sensor.",
+        options: ["a) En presencia de luz desaparece.", "b) Genera un patrón de ruido impulsional", "c) Se tapan unos píxeles en los bordes del sensor para cuantificarla.", "d) Si enfriamos el sensor subimos su contribución en la señal."],
+        correct: 2
+    },
+    {
+        category: "Visión por Computador",
+        q: "31.- Cuántos terabytes aproximadamente se necesitarán para almacenar, en imágenes color sin comprimir de 8 bits por canal, toda la superficie de la tierra (radio = 6371 km):",
+        options: ["a) 4.6 TB", "b) 14 TB", "c) 37 TB", "d) 112 TB"],
+        correct: 1
+    },
+    {
+        category: "Visión por Computador",
+        q: "32.- Cuál de estas representaciones de los datos es una función creciente:",
+        options: ["a) el histograma de la mayoría de las imágenes", "b) una discretización de la función gausiana", "c) la LUT que permite hacer la ecualización de una imagen", "d) la LUT que aplicaríamos para conseguir la imagen negativa"],
+        correct: 2
+    },
+    {
+        category: "Visión por Computador",
+        q: "33.- Cuál de estos códigos representa una maximización del contraste:",
+        options: ["a) 255*((max(im(:))-min(im(:)))/(im-min(im(:))));", "b) 255*((im-min(im(:)))/(max(im(:))-min(im(:))));", "c) 255*(im-min(im(:))));", "d) 255*((im-max(im(:)))./(im-min(im(:))));"],
+        correct: 1
+    },
+    {
+        category: "Visión por Computador",
+        q: "34.- En una imagen de una cuadrícula queremos encontrar los cruces utilizando una máscara en forma de cruz.",
+        options: ["a) Sólo con una convolución obtendremos valores máximos locales en los cruces.", "b) Ya sea con correlación o convolución obtendremos máximos locales en los cruces.", "c) Sólo usando una correlación obtendremos valores máximos locales en los cruces.", "d) Ya sea con correlación o convolución obtendremos valores mínimos locales en cruces."],
+        correct: 1
+    },
+    {
+        category: "Visión por Computador",
+        q: "35.- En una secuencia de una cámara estática que mira a una carretera. ¿Para qué no usaríamos la suma (promedio) de imágenes directamente?",
+        options: ["a) para eliminar ruido", "b) para detectar coches", "c) para montar un modelo de fondo", "d) para eliminar la contribución de los elementos que se mueven"],
+        correct: 1
+    },
+    {
+        category: "Visión por Computador",
+        q: "36.- Cuál es el resultado de esta operación, conv2([1, 2; 3, 4],[1, -1]’,‘valid’):",
+        options: ["a) [-1,-1]’", "b) [2,2]", "c) [-2,-2]’", "d) [1,1]"],
+        correct: 1
+    },
+    {
+        category: "Visión por Computador",
+        q: "37.- Cuál es el resultado de esta operación, conv2([1, 2; 3, 4],[-1, 1], ‘valid’):",
+        options: ["a) [-1,-1]’", "b) [2,2]", "c) [-2,-2]’", "d) [1,1]"],
+        correct: 0
+    },
+    {
+        category: "Visión por Computador",
+        q: "38.- La mejora que obtenemos usando la FFT respecto a la convolución en el espacio viene de:",
+        options: ["a) La convolución sólo se aplica con máscaras impares.", "b) La FFT permite hacer convoluciones en más de una dimensión.", "c) La FFT transforma la señal a una representación donde la mayoría son 0.", "d) La FFT tiene un coste N log N y la convolución N^2."],
+        correct: 3
+    },
+    {
+        category: "Visión por Computador",
+        q: "39.- Cuál de estos detectores de contorno genera el gradiente con máscaras 2×2:",
+        options: ["a) Laplacian of Gaussian", "b) Roberts", "c) Sobel", "d) Canny"],
+        correct: 1
+    },
+    {
+        category: "Visión por Computador",
+        q: "40.- La convolución en el dominio espacial se convierte en el dominio frecuencial en:",
+        options: ["a) una sustracción.", "b) un escalado de la máscara.", "c) un producto.", "d) una simetría."],
+        correct: 2
+    },
+    {
+        category: "Visión por Computador",
+        q: "41.- Recibimos una imagen con ruido donde unos pocos píxeles cambian su valor de forma radical. Qué filtro utilizarías:",
+        options: ["a) filtro de media", "b) filtro homomórfico", "c) filtro de mediana", "d) una erosión seguida de una dilatación"],
+        correct: 2
+    },
+    {
+        category: "Visión por Computador",
+        q: "42.- i=zeros(9), i(5,5)=1, i=imdilate(i,ones(3)), i=imdilate(i,ones(3)) genera un cuadrado centrado de tamaño:",
+        options: ["a) 3×3", "b) 5×5", "c) 7×7", "d) 9×9"],
+        correct: 1
+    },
+    {
+        category: "Visión por Computador",
+        q: "43.- Cómo podemos tener un contorno con morfología matemática:",
+        options: ["a) imagen menos closing", "b) imagen menos opening", "c) imagen menos erosión", "d) opening menos closing"],
+        correct: 2
+    },
+    {
+        category: "Visión por Computador",
+        q: "44.- Cuál de estas operaciones es un opening residue:",
+        options: ["a) f ◦ ((f − B) + B)", "b) f ◦ (f ⊕ B)", "c) ((f ⊕ B) ◦ B) − ((f ◦ B) ⊕ B)", "d) f − ((f ⊖ B) ⊕ B)"],
+        correct: 3
+    },
+    {
+        category: "Visión por Computador",
+        q: "45.- Cuántos puntos (píxeles vecinos) se necesitan para hacer una interpolación bilineal:",
+        options: ["a) 1", "b) 4", "c) 9", "d) 16"],
+        correct: 1
+    },
+    {
+        category: "Visión por Computador",
+        q: "46.- Queremos hacer una transformación geométrica basada en un polinomio de tercer orden. Cuántas parejas por lo menos:",
+        options: ["a) 3", "b) 6", "c) 10", "d) 15"],
+        correct: 2
+    },
+    {
+        category: "Visión por Computador",
+        q: "47.- En la homografía que pasa suelo a vista cenital, v1 y v2 representan:",
+        options: ["a) el aspect ratio.", "b) el tamaño del rectángulo output.", "c) el tamaño del rectángulo input.", "d) el punto de fuga."],
+        correct: 3
+    },
+    {
+        category: "Visión por Computador",
+        q: "48.- Algoritmo para mejorar correspondencias erróneas (outliers):",
+        options: ["a) RANSAC", "b) Regresión lineal", "c) Transformada de Radon", "d) Transformada de Hough"],
+        correct: 0
+    },
+    {
+        category: "Visión por Computador",
+        q: "49.- Con una cámara que gira sobre un eje vertical que pasa por su centro óptico qué tipo de mosaicos podemos recrear:",
+        options: ["a) sólo mosaico plano", "b) mosaico plano y cilíndrico", "c) sólo mosaico cilíndrico", "d) un travelling"],
+        correct: 1
+    },
+    {
+        category: "Visión por Computador",
+        q: "50.- Queremos rotar la imagen 'in' un ángulo α para obtener 'out'. Qué propuesta tiene más sentido:",
+        options: ["a) ∀x, y ∈ out, out(x, y) = in(x cos(α) − y sin(α), ...)", "b) ∀x, y ∈ out, out(x, y) = in(x cos(−α) − y sin(−α), ...)", "c) ∀x, y ∈ in , out(x cos(α) − y sin(α), ...) = in(x, y)", "d) ∀x, y ∈ in , out(x cos(−α) − y sin(−α), ...) = in(x, y)"],
         correct: 1
     }
 ];
